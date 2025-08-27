@@ -14,3 +14,5 @@ include fitsmap/support/settingsControl.min.js
 include fitsmap/support/LabelControl.min.css
 include fitsmap/support/labelControl.min.js
 include fitsmap/support/fitsmapScale.min.js
+include fitsmap/support/leaflet.edgebuffer.min.js
+include fitsmap/support/integerTranslate.min.js

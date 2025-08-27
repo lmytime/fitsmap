@@ -85,11 +85,11 @@ Requirements:
 - ``ray``
 - ``tqdm``
 
-Use ``pip`` to install
+Use ``pip`` to install this custom-built version by Mingyu Li.
 
 .. code-block:: bash
 
-    pip install fitsmap
+    pip install https://github.com/lmytime/fitsmap/archive/refs/heads/myfitsmap.zip
 
 Usage
 *****
