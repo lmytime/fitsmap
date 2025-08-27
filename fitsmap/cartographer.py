@@ -547,6 +547,7 @@ def build_html(title: str, extra_js: str, extra_css: str) -> str:
         '        <div class="loadingtext">Loading...</div>',
         "    </div>",
         '    <div id="map"></div>',
+        '    <div class="leaflet-bottom leaflet-left"><div class="leaflet-control"><input type="text" placeholder="RA Dec" id="boxCoord"></div></div>',
         "</body>",
         f"<!--Made with fitsmap v{utils.get_version()}-->",
         "</html>\n",

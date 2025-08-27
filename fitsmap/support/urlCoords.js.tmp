@@ -84,6 +84,30 @@ panFromUrl = function(map){
     }
 }
 
+panFromBox = function(map){
+    // Pan map based on ra/dec in text box
+    var box = document.getElementById("boxCoord").value;
+    var coords = box.split(/[\s,]+/);
+    if (coords.length==2){
+        var ra = parseFloat(coords[0]);
+        var dec = parseFloat(coords[1]);
+        if ((!isNaN(ra)) & (!isNaN(dec))){
+            panToSky([ra,dec], map.getZoom(), map);
+        } else {
+            console.log("Could not parse coordinates: " + box);
+        }
+    }
+}
+
+// When the user presses Enter, pan to the specified coordinates
+document.addEventListener('DOMContentLoaded', (event) => {
+    document.getElementById("boxCoord").addEventListener("keyup", function(event) {
+        if (event.key === "Enter") {
+            panFromBox(map);
+        }
+    });
+});
+
 updateLocationBar = function(){
     var rd = pixToSky(map.getCenter());
     //console.log(rd);
