@@ -22,3 +22,5 @@ fitsmap/tests/__pycache__/
 testing_tmp/
 
 fitsmap/tests/data/test.columns
+
+.history
