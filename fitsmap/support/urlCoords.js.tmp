@@ -72,8 +72,8 @@ panFromUrl = function(map){
         dec = parseFloat(coords[1]);
     } else {
         // If ra/dec are not set, use default crval
-        ra = ra !== null ? parseFloat(ra) : crval[0];
-        dec = dec !== null ? parseFloat(dec) : crval[1];
+        ra = crval[0];
+        dec = crval[1];
     }
     var zoom = urlParam('zoom') || map.getMinZoom();
     if ((ra !== null) & (dec !== null)) {
