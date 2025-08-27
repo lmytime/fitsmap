@@ -245,7 +245,7 @@ def loading_screen_js(tile_layers: List[dict]):
             f'{tile_layers[0]["name"]}.on("load", () => {{',
             '    document.getElementById("loading-screen").style.display = "none";',
             '    document.getElementById("map").style.visibility = "visible";',
-            "    label.update(map.getCenter());",
+            # "    label.update(map.getCenter());",
             "});",
         ]
     )
